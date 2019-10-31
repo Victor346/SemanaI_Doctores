@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 45536796}
   - component: {fileID: 45536795}
   - component: {fileID: 45536794}
+  - component: {fileID: 45536799}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -165,7 +166,7 @@ MeshCollider:
   m_GameObject: {fileID: 45536793}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -224,12 +225,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45536793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 394.33597, y: -107, z: 10.086212}
-  m_LocalScale: {x: 355.44586, y: 355.44586, z: 355.44586}
+  m_LocalPosition: {x: 394.34, y: -107, z: 10.078}
+  m_LocalScale: {x: 44181.21, y: 44181.21, z: 44181.21}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &45536799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45536793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000001, y: 2.2204463e-16, z: 10.000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &408633858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -640,7 +654,7 @@ MonoBehaviour:
   m_PlayerPrefab: {fileID: 4042122571729619731, guid: a845b1b073d534546829bf7ca494776b,
     type: 3}
   m_AutoCreatePlayer: 1
-  m_PlayerSpawnMethod: 1
+  m_PlayerSpawnMethod: 0
   m_OfflineScene: 
   m_OnlineScene: 
   m_SpawnPrefabs:
