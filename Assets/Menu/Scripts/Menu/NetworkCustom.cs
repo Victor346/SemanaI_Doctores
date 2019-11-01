@@ -27,7 +27,7 @@ public class NetworkCustom : NetworkManager
         if (startPos != null)
         {
             
-            player = Instantiate(characters[chosenCharacter], new Vector3(0.43405f, 0.351f, 3.021807f), startPos.rotation) as GameObject;
+            player = Instantiate(characters[chosenCharacter], new Vector3(0.43405f, 0.351f, 3.021807f), startPos.rotation);
             chosenCharacter++;
         }
         else

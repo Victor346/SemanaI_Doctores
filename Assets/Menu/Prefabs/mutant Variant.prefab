@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &-7509385314757502879
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537850031360316807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-7987997104495928063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,8 +27,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: 
   multiplicadorDeDanio: 0
-  pistola: {fileID: 0}
-  bala: {fileID: 0}
+  pistola: {fileID: 4537850031360316809}
+  bala: {fileID: 2678078692397654950, guid: ae766ae52e1a47a4a8ecbf791aa22411, type: 3}
   experiencia: 0
 --- !u!114 &7862111316697585813
 MonoBehaviour:
@@ -50,19 +63,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!65 &-7509385314757502879
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4537850031360316807}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &4537850031360414503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,6 +123,12 @@ PrefabInstance:
 --- !u!1 &4537850031360316807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 9de56d51b686e584686ab74ef9258a7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4537850031360414503}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4537850031360316809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100014, guid: 9de56d51b686e584686ab74ef9258a7f,
     type: 3}
   m_PrefabInstance: {fileID: 4537850031360414503}
   m_PrefabAsset: {fileID: 0}
