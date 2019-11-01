@@ -8,6 +8,7 @@ public class NetworkCustom : NetworkManager
 {
     public int chosenCharacter = 0;
     public GameObject[] characters;
+    public GameObject[] jugadores;
 
     //subclass for sending network messages
     public class NetworkMessage : MessageBase
@@ -26,8 +27,8 @@ public class NetworkCustom : NetworkManager
 
         if (startPos != null)
         {
-            
-            player = Instantiate(characters[chosenCharacter], new Vector3(0.43405f, 0.351f, 3.021807f), startPos.rotation);
+            player = jugadores[chosenCharacter];
+           //player = Instantiate(characters[chosenCharacter], new Vector3(0.43405f, 0.351f, 3.021807f), startPos.rotation);
             chosenCharacter++;
         }
         else
