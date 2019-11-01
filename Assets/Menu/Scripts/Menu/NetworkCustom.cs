@@ -9,8 +9,14 @@ public class NetworkCustom : NetworkManager
     public int chosenCharacter = 0;
     public GameObject[] characters;
     public GameObject[] jugadores;
+    public GameObject bala;
 
     //subclass for sending network messages
+
+    public override void OnStartHost()
+    {
+        Instantiate(bala, new Vector3(0.43405f, 0.351f, 3.021807f), new Quaternion());
+    }
     public class NetworkMessage : MessageBase
     {
         public int chosenClass;
