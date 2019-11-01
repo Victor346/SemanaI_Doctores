@@ -11,6 +11,7 @@ public class NetworkCustom : NetworkManager
     public GameObject[] jugadores;
     public GameObject bala;
 
+    public GameObject padrecito;
     //subclass for sending network messages
 
     public override void OnStartHost()
@@ -35,12 +36,14 @@ public class NetworkCustom : NetworkManager
         {
             //player = jugadores[chosenCharacter];
             player = Instantiate(characters[chosenCharacter], new Vector3(0.43405f, 0.351f, 3.021807f), startPos.rotation);
+            player.GetComponent<NetworkPositionController>().padre = padrecito;
             chosenCharacter++;
         }
         else
         {
             //player = jugadores[chosenCharacter];
             player = Instantiate(characters[chosenCharacter], Vector3.zero, Quaternion.identity) as GameObject;
+            player.GetComponent<NetworkPositionController>().padre = padrecito;
             chosenCharacter++;
         }
 
