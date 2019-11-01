@@ -37,9 +37,9 @@ public class LocalPlayerController : NetworkBehaviour
     void Start()
     {
 
-        bodyRender = GetComponent<Renderer>();
+        //bodyRender = GetComponent<Renderer>();
         position = transform.position;
-        bodyRender.material.SetColor("_Color", Color.red);
+        //bodyRender.material.SetColor("_Color", Color.red);
 
     }
 
