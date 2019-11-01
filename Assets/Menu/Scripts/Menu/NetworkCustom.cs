@@ -28,13 +28,13 @@ public class NetworkCustom : NetworkManager
         if (startPos != null)
         {
             player = jugadores[chosenCharacter];
-           //player = Instantiate(characters[chosenCharacter], new Vector3(0.43405f, 0.351f, 3.021807f), startPos.rotation);
+            //player = Instantiate(characters[chosenCharacter], new Vector3(0.43405f, 0.351f, 3.021807f), startPos.rotation);
             chosenCharacter++;
         }
         else
         {
-            
-            player = Instantiate(characters[chosenCharacter], Vector3.zero, Quaternion.identity) as GameObject;
+            player = jugadores[chosenCharacter];
+            //player = Instantiate(characters[chosenCharacter], Vector3.zero, Quaternion.identity) as GameObject;
             chosenCharacter++;
         }
 
